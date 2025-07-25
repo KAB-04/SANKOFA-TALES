@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+  background-color: #f5deb3; /* Ghanaian beige tone */
+  background-image: url('{% static "images.jpeg" %}');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #3b2c1a;
+  text-align: center;
+}
+
+.container {
+  padding-top: 60px;
+  max-width: 500px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.story-selection, .story-generation {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 15px 0 5px;
+}
+
+select, input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1.5px solid #a65a2a;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff5e1;
+  color: #3b2c1a;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #c85a1e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #9b4315;
+}
+
+.story-box {
+  background-color: #fff5e6;
+  border: 2px solid #b5651d;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: #3b2c1a;
+  text-align: left;
+  line-height: 1.6;
+  animation: fadeIn 0.5s ease-in-out;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden {
+  display: none;
+}
+

@@ -1,0 +1,49 @@
+{% load static %}
+
+<form method="post">
+  {% csrf_token %}
+</form>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SANKOFA TALES – The Ghanaian Heritage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+
+<body>
+  <div class="container">
+    <h1>SANKOFA TALES</h1>
+    <h2>- [ The Ghanaian Heritage ]</h2>
+
+    <div class="story-selection">
+      <label for="storySelect">Choose a story:</label>
+      <select id="storySelect">
+        <option>Select a story</option>
+        <!-- You’ll populate this dynamically later -->
+      </select>
+    </div>
+
+    <div class="story-generation">
+      <label>Generate a story:</label>
+
+      <label for="goodMoral">Good morals:</label>
+      <input type="text" id="goodMoral" placeholder="e.g. Honesty">
+
+      <label for="badMoral">Bad morals:</label>
+      <input type="text" id="badMoral" placeholder="e.g. Greed">
+
+      <button id="generateBtn">Generate</button>
+    </div>
+
+    <div id="generatedStory" class="story-box hidden"></div>
+
+  </div>
+
+  <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
